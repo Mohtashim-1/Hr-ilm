@@ -1,0 +1,88 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-06-20 12:23:23.951054",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "date",
+  "organization",
+  "area",
+  "time_in",
+  "time_out",
+  "meter_reading_in",
+  "meter_reading_out",
+  "km",
+  "amount",
+  "total_amount"
+ ],
+ "fields": [
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "organization",
+   "fieldtype": "Link",
+   "label": "Organization",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "area",
+   "fieldtype": "Link",
+   "label": "Area",
+   "options": "Territory"
+  },
+  {
+   "fieldname": "time_in",
+   "fieldtype": "Time",
+   "label": "Time in"
+  },
+  {
+   "fieldname": "time_out",
+   "fieldtype": "Time",
+   "label": "Time out"
+  },
+  {
+   "fieldname": "meter_reading_in",
+   "fieldtype": "Data",
+   "label": "Meter Reading in"
+  },
+  {
+   "fieldname": "meter_reading_out",
+   "fieldtype": "Data",
+   "label": "Meter Reading out"
+  },
+  {
+   "fieldname": "km",
+   "fieldtype": "Data",
+   "label": "Km"
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Currency",
+   "label": "Amount"
+  },
+  {
+   "fieldname": "total_amount",
+   "fieldtype": "Currency",
+   "label": "Total Amount"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-06-20 12:25:22.603579",
+ "modified_by": "Administrator",
+ "module": "HR VentureForce Global",
+ "name": "Conveyance Billing Sheet CT",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

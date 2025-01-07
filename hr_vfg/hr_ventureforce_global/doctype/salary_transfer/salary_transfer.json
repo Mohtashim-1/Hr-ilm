@@ -1,0 +1,233 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2023-09-28 23:37:32.895750",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_1",
+  "transfer_type",
+  "bank_account",
+  "column_break_3",
+  "mode_of_payment",
+  "posting_date",
+  "column_break_4",
+  "year",
+  "bank",
+  "column_break_10",
+  "select_month",
+  "total",
+  "cheque_details_section",
+  "cheque_no",
+  "column_break_15",
+  "cheque_date",
+  "column_break_17",
+  "user_remark",
+  "column_break_dp0zg",
+  "title",
+  "section_break_7",
+  "salary_transfer_employees",
+  "cheque_transfer_employees_section",
+  "cheque_transfer_employees",
+  "amended_from",
+  "naming_series"
+ ],
+ "fields": [
+  {
+   "default": "Today",
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "label": "Posting Date"
+  },
+  {
+   "fieldname": "select_month",
+   "fieldtype": "Select",
+   "label": "Month",
+   "options": "\nJanuary\nFebruary\nMarch\nApril\nMay\nJune\nJuly\nAugust\nSeptember\nOctober\nNovember\nDecember"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "bank_account",
+   "fieldtype": "Link",
+   "label": "Bank Account",
+   "options": "Bank Account"
+  },
+  {
+   "fetch_from": "bank_account.bank",
+   "fieldname": "bank",
+   "fieldtype": "Link",
+   "label": "Bank",
+   "options": "Bank",
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Salary Transfer",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.mode_of_payment != \"Cheque\"",
+   "fieldname": "section_break_7",
+   "fieldtype": "Section Break",
+   "label": "Salary Transfer Employees"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "depends_on": "eval:doc.mode_of_payment != \"Cheque\"",
+   "fieldname": "salary_transfer_employees",
+   "fieldtype": "Table",
+   "options": "Salary Transfer Employees"
+  },
+  {
+   "bold": 1,
+   "fieldname": "total",
+   "fieldtype": "Currency",
+   "label": "Total",
+   "read_only": 1
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": "ST-"
+  },
+  {
+   "fieldname": "year",
+   "fieldtype": "Select",
+   "label": "Year",
+   "options": "\n2023\n2024\n2025\n2026\n2027\n2028\n2029\n2030",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_1",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "transfer_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Transfer Type",
+   "options": "\nSalary Transfer",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_10",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:doc.mode_of_payment == \"Bank\"",
+   "fieldname": "cheque_details_section",
+   "fieldtype": "Section Break",
+   "label": "Cheque Details"
+  },
+  {
+   "fieldname": "cheque_no",
+   "fieldtype": "Data",
+   "label": "Cheque No"
+  },
+  {
+   "fieldname": "column_break_15",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "cheque_date",
+   "fieldtype": "Date",
+   "label": "Cheque Date"
+  },
+  {
+   "fieldname": "column_break_17",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "user_remark",
+   "fieldtype": "Data",
+   "label": "User Remark"
+  },
+  {
+   "fieldname": "mode_of_payment",
+   "fieldtype": "Link",
+   "label": "Mode of Payment",
+   "options": "Mode of Payment",
+   "set_only_once": 1
+  },
+  {
+   "depends_on": "eval:doc.mode_of_payment == \"Cheque\"",
+   "fieldname": "cheque_transfer_employees_section",
+   "fieldtype": "Section Break",
+   "label": "Cheque Transfer Employees"
+  },
+  {
+   "depends_on": "eval:doc.mode_of_payment == \"Cheque\"",
+   "fieldname": "cheque_transfer_employees",
+   "fieldtype": "Table",
+   "options": "Cheque Transfer Employees"
+  },
+  {
+   "fieldname": "column_break_dp0zg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "label": "Title"
+  }
+ ],
+ "hide_toolbar": 1,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-01-05 13:52:02.864192",
+ "modified_by": "Administrator",
+ "module": "HR VentureForce Global",
+ "name": "Salary Transfer",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "select": 1,
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Accounts User",
+   "select": 1,
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

@@ -1,0 +1,94 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-05-17 11:46:27.864614",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "from",
+  "to",
+  "company_name",
+  "contact",
+  "first_position",
+  "last_position",
+  "reason_for_leaving",
+  "first_gross_salary",
+  "last_gross_salary",
+  "benefits"
+ ],
+ "fields": [
+  {
+   "fieldname": "from",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": " From"
+  },
+  {
+   "fieldname": "to",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "To"
+  },
+  {
+   "fieldname": "company_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Company Name"
+  },
+  {
+   "fieldname": "contact",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Contact"
+  },
+  {
+   "fieldname": "first_position",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "First Position"
+  },
+  {
+   "fieldname": "last_position",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Last Position"
+  },
+  {
+   "fieldname": "reason_for_leaving",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Reason for Leaving"
+  },
+  {
+   "fieldname": "first_gross_salary",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "First Gross Salary"
+  },
+  {
+   "fieldname": "last_gross_salary",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Last Gross Salary"
+  },
+  {
+   "fieldname": "benefits",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Benefits"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-05-17 11:46:37.847596",
+ "modified_by": "Administrator",
+ "module": "HR VentureForce Global",
+ "name": "Employment History",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

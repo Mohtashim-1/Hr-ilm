@@ -1,0 +1,69 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-12-22 23:59:27.626900",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "employee_id",
+  "employee_name",
+  "cnic",
+  "amount",
+  "branches_name",
+  "cheque",
+  "cheque_date"
+ ],
+ "fields": [
+  {
+   "fieldname": "employee_id",
+   "fieldtype": "Link",
+   "label": "Employee ID",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "employee_id.first_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Read Only",
+   "label": "Employee Name"
+  },
+  {
+   "fetch_from": "employee_id.cnic_number",
+   "fieldname": "cnic",
+   "fieldtype": "Read Only",
+   "label": "CNIC"
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Currency",
+   "label": "Amount"
+  },
+  {
+   "fetch_from": "employee_id.branch",
+   "fieldname": "branches_name",
+   "fieldtype": "Read Only",
+   "label": "Branches Name"
+  },
+  {
+   "fieldname": "cheque",
+   "fieldtype": "Data",
+   "label": "Cheque"
+  },
+  {
+   "fieldname": "cheque_date",
+   "fieldtype": "Date",
+   "label": "Cheque Date"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-01-11 15:53:47.603413",
+ "modified_by": "Administrator",
+ "module": "HR VentureForce Global",
+ "name": "Cheque Transfer Employees",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

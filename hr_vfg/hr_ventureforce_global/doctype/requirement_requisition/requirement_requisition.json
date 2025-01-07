@@ -1,0 +1,275 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2024-05-17 16:51:55.082001",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "department",
+  "job_locations",
+  "column_break_txshm",
+  "position",
+  "proposed_salary",
+  "column_break_cgiaf",
+  "number_of_positions",
+  "job_details_section",
+  "new_position",
+  "column_break_rqtmz",
+  "transfer",
+  "column_break_q5lcj",
+  "replacement",
+  "column_break_k1klm",
+  "other",
+  "position_type_section",
+  "full_time",
+  "column_break_ffwc1",
+  "part_time",
+  "gender_section",
+  "male",
+  "column_break_w3vtc",
+  "female",
+  "job_specifications_tab",
+  "job_specifications_section",
+  "job_requirements",
+  "tab_break_saab9",
+  "job_description_section",
+  "description",
+  "reason_for_hire_tab",
+  "reason_for_hire_section",
+  "reason",
+  "d_hod",
+  "d_ceo",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Department",
+   "options": "Department"
+  },
+  {
+   "fieldname": "job_locations",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Job locations",
+   "options": "Branch"
+  },
+  {
+   "fieldname": "column_break_txshm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "position",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Position",
+   "options": "Designation"
+  },
+  {
+   "fieldname": "proposed_salary",
+   "fieldtype": "Currency",
+   "label": "Proposed Salary"
+  },
+  {
+   "fieldname": "column_break_cgiaf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "number_of_positions",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Number of Positions"
+  },
+  {
+   "fieldname": "job_details_section",
+   "fieldtype": "Section Break",
+   "label": "Job Details"
+  },
+  {
+   "default": "0",
+   "fieldname": "new_position",
+   "fieldtype": "Check",
+   "label": "New Position"
+  },
+  {
+   "fieldname": "column_break_rqtmz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "transfer",
+   "fieldtype": "Check",
+   "label": "Transfer"
+  },
+  {
+   "fieldname": "column_break_q5lcj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "replacement",
+   "fieldtype": "Check",
+   "label": "Replacement"
+  },
+  {
+   "fieldname": "column_break_k1klm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "other",
+   "fieldtype": "Check",
+   "label": "Other"
+  },
+  {
+   "fieldname": "position_type_section",
+   "fieldtype": "Section Break",
+   "label": "Position Type"
+  },
+  {
+   "default": "0",
+   "fieldname": "full_time",
+   "fieldtype": "Check",
+   "label": "Full Time"
+  },
+  {
+   "fieldname": "column_break_ffwc1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "part_time",
+   "fieldtype": "Check",
+   "label": "Part Time"
+  },
+  {
+   "fieldname": "gender_section",
+   "fieldtype": "Section Break",
+   "label": "Gender"
+  },
+  {
+   "default": "0",
+   "fieldname": "male",
+   "fieldtype": "Check",
+   "label": "Male"
+  },
+  {
+   "fieldname": "column_break_w3vtc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "female",
+   "fieldtype": "Check",
+   "label": "Female"
+  },
+  {
+   "fieldname": "job_specifications_section",
+   "fieldtype": "Section Break",
+   "label": "Job Specifications"
+  },
+  {
+   "fieldname": "job_requirements",
+   "fieldtype": "Text Editor",
+   "label": "Job Requirements"
+  },
+  {
+   "fieldname": "job_description_section",
+   "fieldtype": "Section Break",
+   "label": "Job Description"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text Editor",
+   "label": "Description"
+  },
+  {
+   "fieldname": "reason_for_hire_section",
+   "fieldtype": "Section Break",
+   "label": " Reason For Hire"
+  },
+  {
+   "fieldname": "reason",
+   "fieldtype": "Text Editor",
+   "label": " Reason"
+  },
+  {
+   "fieldname": "d_hod",
+   "fieldtype": "Date",
+   "label": "Department HOD Approval Date"
+  },
+  {
+   "fieldname": "d_ceo",
+   "fieldtype": "Date",
+   "label": "CEO Approval Date"
+  },
+  {
+   "fieldname": "reason_for_hire_tab",
+   "fieldtype": "Tab Break",
+   "label": " Reason For Hire"
+  },
+  {
+   "fieldname": "job_specifications_tab",
+   "fieldtype": "Tab Break",
+   "label": "Job Specifications"
+  },
+  {
+   "fieldname": "tab_break_saab9",
+   "fieldtype": "Tab Break",
+   "label": "Job Description"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "in_list_view": 1,
+   "options": "RR-.#####",
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Requirement Requisition",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-06-28 10:51:08.317526",
+ "modified_by": "Administrator",
+ "module": "HR VentureForce Global",
+ "name": "Requirement Requisition",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,39 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-06-08 13:09:58.166069",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "questions",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "questions",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Questions"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Remarks",
+   "options": "Remarks"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-06-08 13:10:12.013776",
+ "modified_by": "Administrator",
+ "module": "HR VentureForce Global",
+ "name": "Employee Survey CT",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

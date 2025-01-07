@@ -1,0 +1,673 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2024-05-17 10:51:18.864166",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "posting_date",
+  "full_name",
+  "no_of_siblings",
+  "father",
+  "mother",
+  "spouse",
+  "column_break_mrqox",
+  "father_name",
+  "cnic_no",
+  "no_of_children",
+  "address",
+  "column_break_dczcd",
+  "candidate_type",
+  "email_address",
+  "duty_type",
+  "residential_address",
+  "contact_detail_section",
+  "cell",
+  "date_of_birth",
+  "column_break_cooww",
+  "res",
+  "city_of_birth",
+  "column_break_mrb3s",
+  "other",
+  "position_information_section",
+  "table_1",
+  "means_of_transportation_section",
+  "private",
+  "public",
+  "employment_history_section",
+  "table_2",
+  "work_experience_section",
+  "previous_work_experience",
+  "additional_comments_or_information_section",
+  "additional_comments",
+  "official_use_only_section",
+  "position_applied_for",
+  "notice_period",
+  "salary_and_benefits_offer",
+  "relevant_department_hod_remarks",
+  "column_break_y6zzi",
+  "joining_date",
+  "relevant_experience_in_years",
+  "expected_salary",
+  "hr_department_remarks",
+  "column_break_jvqtj",
+  "hod_signature_and_date",
+  "ceo_approval_hr_signature_and_date",
+  "current_salary_and_benefits",
+  "education_tab",
+  "education_section",
+  "table_3",
+  "section_break_snuon",
+  "languages",
+  "majorarea_of_study",
+  "column_break_drhcr",
+  "highest_level_of_education_completed",
+  "speaking_section",
+  "fair_s",
+  "column_break_vlxrx",
+  "good_s",
+  "column_break_lyga9",
+  "excellent_s",
+  "reading_section",
+  "fair_r",
+  "column_break_zi3d8",
+  "good_r",
+  "column_break_3xg9x",
+  "excellent_r",
+  "writing_section",
+  "fair_w",
+  "column_break_c9o89",
+  "good_w",
+  "column_break_ctds6",
+  "excellent_w",
+  "section_break_mmywp",
+  "html_tag",
+  "name1",
+  "yes",
+  "no",
+  "column_break_uhbav",
+  "designation",
+  "column_break_pleaj",
+  "relation",
+  "ypw",
+  "full_time",
+  "column_break_2gvbs",
+  "part_time",
+  "column_break_6lu2l",
+  "any",
+  "family_info_tab",
+  "immediate_family_details_section",
+  "table_4",
+  "references_tab",
+  "references_section",
+  "table_5",
+  "remarks_tab_tab",
+  "remarks_section",
+  "table_6",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Full Name"
+  },
+  {
+   "fieldname": "no_of_siblings",
+   "fieldtype": "Data",
+   "label": "No of Siblings"
+  },
+  {
+   "fieldname": "residential_address",
+   "fieldtype": "Small Text",
+   "label": "Residential Address"
+  },
+  {
+   "fieldname": "column_break_mrqox",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "father_name",
+   "fieldtype": "Data",
+   "label": "Father Name"
+  },
+  {
+   "fieldname": "no_of_children",
+   "fieldtype": "Data",
+   "label": "No of Children"
+  },
+  {
+   "fieldname": "column_break_dczcd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "father",
+   "fieldtype": "Check",
+   "label": "Father"
+  },
+  {
+   "default": "0",
+   "fieldname": "spouse",
+   "fieldtype": "Check",
+   "label": "Spouse"
+  },
+  {
+   "default": "0",
+   "fieldname": "mother",
+   "fieldtype": "Check",
+   "label": "Mother"
+  },
+  {
+   "fieldname": "email_address",
+   "fieldtype": "Data",
+   "label": "Email Address"
+  },
+  {
+   "fieldname": "contact_detail_section",
+   "fieldtype": "Section Break",
+   "label": "Contact Detail"
+  },
+  {
+   "fieldname": "cell",
+   "fieldtype": "Data",
+   "label": "Cell"
+  },
+  {
+   "fieldname": "date_of_birth",
+   "fieldtype": "Date",
+   "label": "Date of Birth"
+  },
+  {
+   "fieldname": "column_break_cooww",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "res",
+   "fieldtype": "Data",
+   "label": "Res"
+  },
+  {
+   "fieldname": "city_of_birth",
+   "fieldtype": "Data",
+   "label": "City of Birth"
+  },
+  {
+   "fieldname": "column_break_mrb3s",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "other",
+   "fieldtype": "Data",
+   "label": "Other"
+  },
+  {
+   "fieldname": "position_information_section",
+   "fieldtype": "Section Break",
+   "label": "Position Information"
+  },
+  {
+   "fieldname": "means_of_transportation_section",
+   "fieldtype": "Section Break",
+   "label": "Means of Transportation"
+  },
+  {
+   "fieldname": "private",
+   "fieldtype": "Data",
+   "label": "Private"
+  },
+  {
+   "default": "0",
+   "fieldname": "public",
+   "fieldtype": "Check",
+   "label": "Public"
+  },
+  {
+   "fieldname": "employment_history_section",
+   "fieldtype": "Section Break",
+   "label": "Employment History"
+  },
+  {
+   "fieldname": "education_section",
+   "fieldtype": "Section Break",
+   "label": "Education"
+  },
+  {
+   "fieldname": "languages",
+   "fieldtype": "Select",
+   "label": "Languages",
+   "options": "\nEnglish\nArabic\nSindhi\nPashto\nOther"
+  },
+  {
+   "fieldname": "speaking_section",
+   "fieldtype": "Section Break",
+   "label": "Speaking"
+  },
+  {
+   "fieldname": "column_break_vlxrx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_lyga9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "fair_s",
+   "fieldtype": "Check",
+   "label": "Fair"
+  },
+  {
+   "default": "0",
+   "fieldname": "good_s",
+   "fieldtype": "Check",
+   "label": "Good"
+  },
+  {
+   "default": "0",
+   "fieldname": "excellent_s",
+   "fieldtype": "Check",
+   "label": "Excellent"
+  },
+  {
+   "fieldname": "reading_section",
+   "fieldtype": "Section Break",
+   "label": "Reading"
+  },
+  {
+   "default": "0",
+   "fieldname": "fair_r",
+   "fieldtype": "Check",
+   "label": "Fair"
+  },
+  {
+   "fieldname": "column_break_zi3d8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "good_r",
+   "fieldtype": "Check",
+   "label": "Good"
+  },
+  {
+   "fieldname": "column_break_3xg9x",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "excellent_r",
+   "fieldtype": "Check",
+   "label": "Excellent"
+  },
+  {
+   "fieldname": "writing_section",
+   "fieldtype": "Section Break",
+   "label": "Writing"
+  },
+  {
+   "default": "0",
+   "fieldname": "fair_w",
+   "fieldtype": "Check",
+   "label": "Fair"
+  },
+  {
+   "fieldname": "column_break_c9o89",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "good_w",
+   "fieldtype": "Check",
+   "label": "Good"
+  },
+  {
+   "fieldname": "column_break_ctds6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "excellent_w",
+   "fieldtype": "Check",
+   "label": "Excellent"
+  },
+  {
+   "fieldname": "section_break_mmywp",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "yes",
+   "fieldtype": "Check",
+   "label": "Yes"
+  },
+  {
+   "default": "0",
+   "fieldname": "no",
+   "fieldtype": "Check",
+   "label": "No"
+  },
+  {
+   "fieldname": "html_tag",
+   "fieldtype": "HTML",
+   "options": "\nDo you have any relative / friend employed in TIF? "
+  },
+  {
+   "depends_on": "yes",
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": "Name"
+  },
+  {
+   "fieldname": "column_break_uhbav",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "yes",
+   "fieldname": "designation",
+   "fieldtype": "Data",
+   "label": "Designation"
+  },
+  {
+   "fieldname": "column_break_pleaj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "yes",
+   "fieldname": "relation",
+   "fieldtype": "Data",
+   "label": "Relation"
+  },
+  {
+   "fieldname": "ypw",
+   "fieldtype": "Section Break",
+   "label": " Your preferred working"
+  },
+  {
+   "default": "0",
+   "fieldname": "full_time",
+   "fieldtype": "Check",
+   "label": "Full time"
+  },
+  {
+   "fieldname": "column_break_2gvbs",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "part_time",
+   "fieldtype": "Check",
+   "label": "Part time"
+  },
+  {
+   "fieldname": "column_break_6lu2l",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "any",
+   "fieldtype": "Check",
+   "label": "Any"
+  },
+  {
+   "fieldname": "immediate_family_details_section",
+   "fieldtype": "Section Break",
+   "label": "Immediate Family Details"
+  },
+  {
+   "fieldname": "references_section",
+   "fieldtype": "Section Break",
+   "label": "References"
+  },
+  {
+   "fieldname": "remarks_section",
+   "fieldtype": "Section Break",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "table_1",
+   "fieldtype": "Table",
+   "options": "Candidate Information CT"
+  },
+  {
+   "fieldname": "table_2",
+   "fieldtype": "Table",
+   "options": "Employment History"
+  },
+  {
+   "fieldname": "table_3",
+   "fieldtype": "Table",
+   "options": "Education CT"
+  },
+  {
+   "fieldname": "table_4",
+   "fieldtype": "Table",
+   "options": "Family Details"
+  },
+  {
+   "fieldname": "table_5",
+   "fieldtype": "Table",
+   "options": "References CT"
+  },
+  {
+   "fieldname": "table_6",
+   "fieldtype": "Table",
+   "options": "Remarks CT"
+  },
+  {
+   "fieldname": "remarks_tab_tab",
+   "fieldtype": "Tab Break",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "references_tab",
+   "fieldtype": "Tab Break",
+   "label": "References"
+  },
+  {
+   "fieldname": "education_tab",
+   "fieldtype": "Tab Break",
+   "label": "Education"
+  },
+  {
+   "fieldname": "family_info_tab",
+   "fieldtype": "Tab Break",
+   "label": "Family Info"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "options": "CI-.#####",
+   "read_only": 1
+  },
+  {
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Posting Date"
+  },
+  {
+   "fieldname": "candidate_type",
+   "fieldtype": "Select",
+   "label": "Candidate Type",
+   "options": "Employee\nMaster Trainer & Contractual"
+  },
+  {
+   "depends_on": "eval:doc.candidate_type == \"Master Trainer & Contractual\"",
+   "fieldname": "cnic_no",
+   "fieldtype": "Data",
+   "label": "CNIC No"
+  },
+  {
+   "depends_on": "eval:doc.candidate_type == \"Master Trainer & Contractual\"",
+   "fieldname": "address",
+   "fieldtype": "Small Text",
+   "label": "Address"
+  },
+  {
+   "depends_on": "eval:doc.candidate_type == \"Master Trainer & Contractual\"",
+   "fieldname": "duty_type",
+   "fieldtype": "Select",
+   "label": "Duty Type",
+   "options": "\nOnline\nOnsite"
+  },
+  {
+   "fieldname": "column_break_drhcr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:doc.candidate_type == \"Master Trainer & Contractual\"",
+   "fieldname": "highest_level_of_education_completed",
+   "fieldtype": "Select",
+   "label": "Highest level of education completed",
+   "options": "\nPh.D\nM. Phil\nMasters\nGraduate"
+  },
+  {
+   "fieldname": "section_break_snuon",
+   "fieldtype": "Section Break"
+  },
+  {
+   "depends_on": "eval:doc.candidate_type == \"Master Trainer & Contractual\"",
+   "fieldname": "majorarea_of_study",
+   "fieldtype": "Small Text",
+   "label": "Major/Area of study"
+  },
+  {
+   "depends_on": "eval:doc.candidate_type == \"Master Trainer & Contractual\"",
+   "fieldname": "work_experience_section",
+   "fieldtype": "Section Break",
+   "label": "Work Experience"
+  },
+  {
+   "fieldname": "previous_work_experience",
+   "fieldtype": "Small Text",
+   "label": "Previous Work Experience "
+  },
+  {
+   "depends_on": "eval:doc.candidate_type == \"Master Trainer & Contractual\"",
+   "fieldname": "additional_comments_or_information_section",
+   "fieldtype": "Section Break",
+   "label": "Additional Comments or Information"
+  },
+  {
+   "fieldname": "additional_comments",
+   "fieldtype": "Long Text",
+   "label": "Additional Comments"
+  },
+  {
+   "depends_on": "eval:doc.candidate_type == \"Master Trainer & Contractual\"",
+   "fieldname": "official_use_only_section",
+   "fieldtype": "Section Break",
+   "label": "Official Use Only"
+  },
+  {
+   "fieldname": "position_applied_for",
+   "fieldtype": "Data",
+   "label": "Position Applied for"
+  },
+  {
+   "fieldname": "column_break_y6zzi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "relevant_experience_in_years",
+   "fieldtype": "Select",
+   "label": "Relevant Experience in Years",
+   "options": "\n1 year\n2 years\n3 years\n4 years\n5 years\n6 years\n7 years\n8 years\n9 years\n10 years"
+  },
+  {
+   "fieldname": "column_break_jvqtj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "current_salary_and_benefits",
+   "fieldtype": "Currency",
+   "label": "Current Salary and Benefits"
+  },
+  {
+   "fieldname": "notice_period",
+   "fieldtype": "Select",
+   "label": "Notice Period",
+   "options": "\n10 days\n15 days\n30 days\n45 days\n60 days"
+  },
+  {
+   "fieldname": "expected_salary",
+   "fieldtype": "Currency",
+   "label": "Expected Salary"
+  },
+  {
+   "fieldname": "hod_signature_and_date",
+   "fieldtype": "Date",
+   "label": "HOD Signature and Date"
+  },
+  {
+   "fieldname": "joining_date",
+   "fieldtype": "Date",
+   "label": "Joining Date"
+  },
+  {
+   "fieldname": "ceo_approval_hr_signature_and_date",
+   "fieldtype": "Date",
+   "label": "CEO Approval HR Signature and Date"
+  },
+  {
+   "fieldname": "salary_and_benefits_offer",
+   "fieldtype": "Currency",
+   "label": "Salary and Benefits Offer"
+  },
+  {
+   "fieldname": "relevant_department_hod_remarks",
+   "fieldtype": "Small Text",
+   "label": "Relevant Department HOD Remarks"
+  },
+  {
+   "fieldname": "hr_department_remarks",
+   "fieldtype": "Small Text",
+   "label": "HR Department Remarks"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Candidate Information",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-07-09 11:44:34.073559",
+ "modified_by": "Administrator",
+ "module": "HR VentureForce Global",
+ "name": "Candidate Information",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "full_name"
+}

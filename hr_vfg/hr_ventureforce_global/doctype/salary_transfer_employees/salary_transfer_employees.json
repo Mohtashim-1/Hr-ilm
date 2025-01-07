@@ -1,0 +1,64 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-09-28 23:46:05.378381",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "employee_id",
+  "employee_name",
+  "cnic",
+  "account_no",
+  "amount",
+  "branches_name"
+ ],
+ "fields": [
+  {
+   "fieldname": "employee_id",
+   "fieldtype": "Link",
+   "label": "Employee ID",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "employee_id.first_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Read Only",
+   "label": "Employee Name"
+  },
+  {
+   "fetch_from": "employee_id.cnic_number",
+   "fieldname": "cnic",
+   "fieldtype": "Read Only",
+   "label": "CNIC"
+  },
+  {
+   "fetch_from": "employee_id.bank_ac_no",
+   "fieldname": "account_no",
+   "fieldtype": "Read Only",
+   "label": "Account No"
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Currency",
+   "label": "Amount"
+  },
+  {
+   "fetch_from": "employee_id.branch",
+   "fieldname": "branches_name",
+   "fieldtype": "Read Only",
+   "label": "Branches Name"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-01-11 14:44:45.144784",
+ "modified_by": "Administrator",
+ "module": "HR VentureForce Global",
+ "name": "Salary Transfer Employees",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

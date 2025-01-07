@@ -1,0 +1,36 @@
+{
+ "cards": [
+  {
+   "card": "Punctual"
+  },
+  {
+   "card": "Non Punctual"
+  }
+ ],
+ "charts": [
+  {
+   "chart": "Absents",
+   "width": "Full"
+  },
+  {
+   "chart": "Halfdays",
+   "width": "Full"
+  },
+  {
+   "chart": "Early Going",
+   "width": "Full"
+  }
+ ],
+ "creation": "2024-03-25 11:13:11.839433",
+ "dashboard_name": "Attendance Dashboard",
+ "docstatus": 0,
+ "doctype": "Dashboard",
+ "idx": 0,
+ "is_default": 0,
+ "is_standard": 1,
+ "modified": "2024-08-01 16:44:12.877409",
+ "modified_by": "babar.mehmood@tif.edu.pk",
+ "module": "HR VentureForce Global",
+ "name": "Attendance Dashboard",
+ "owner": "Administrator"
+}

@@ -1,0 +1,171 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "ECF-.######",
+ "creation": "2024-06-10 22:53:59.738634",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "employee_code",
+  "current_salary",
+  "current_status",
+  "column_break_qmtnz",
+  "name1",
+  "commitment_after_confirmation",
+  "column_break_huuai",
+  "position",
+  "salary_increased",
+  "column_break_mn2r1",
+  "joining_date",
+  "promotion",
+  "confirmation_request_from_line_manager_section",
+  "confirmation",
+  "line_manager_sign__date",
+  "column_break_zbtcy",
+  "if_yes_please_mention_the_date_from",
+  "column_break_0zsud",
+  "comments",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "employee_code",
+   "fieldtype": "Link",
+   "label": "Employee Code",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "current_salary",
+   "fieldtype": "Currency",
+   "label": "Current Salary"
+  },
+  {
+   "fieldname": "current_status",
+   "fieldtype": "Link",
+   "label": "Current Status",
+   "options": "Employment Type"
+  },
+  {
+   "fieldname": "column_break_qmtnz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "employee_code.employee_name",
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Name"
+  },
+  {
+   "fieldname": "commitment_after_confirmation",
+   "fieldtype": "Select",
+   "label": "Commitment after Confirmation",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "column_break_huuai",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "employee_code.designation",
+   "fieldname": "position",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Position"
+  },
+  {
+   "fieldname": "salary_increased",
+   "fieldtype": "Currency",
+   "label": "Salary Increased"
+  },
+  {
+   "fieldname": "column_break_mn2r1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "employee_code.date_of_joining",
+   "fieldname": "joining_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Joining Date"
+  },
+  {
+   "fieldname": "promotion",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Promotion",
+   "options": "Designation"
+  },
+  {
+   "fieldname": "confirmation_request_from_line_manager_section",
+   "fieldtype": "Section Break",
+   "label": "Confirmation Request from Line Manager"
+  },
+  {
+   "fieldname": "confirmation",
+   "fieldtype": "Select",
+   "label": "Confirmation",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "line_manager_sign__date",
+   "fieldtype": "Date",
+   "label": "Line Manager Sign & Date"
+  },
+  {
+   "fieldname": "column_break_zbtcy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "if_yes_please_mention_the_date_from",
+   "fieldtype": "Date",
+   "label": "If yes please mention the date from"
+  },
+  {
+   "fieldname": "column_break_0zsud",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "comments",
+   "fieldtype": "Small Text",
+   "label": "Comments"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Employment Confirmation Form",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-07-03 11:40:03.100828",
+ "modified_by": "Administrator",
+ "module": "HR VentureForce Global",
+ "name": "Employment Confirmation Form",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

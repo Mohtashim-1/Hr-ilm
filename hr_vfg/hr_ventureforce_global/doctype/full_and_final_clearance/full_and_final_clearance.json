@@ -1,0 +1,201 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "FFC-.####",
+ "creation": "2024-06-11 10:36:08.318324",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "date",
+  "designation",
+  "column_break_uxizx",
+  "type_of_separation",
+  "department",
+  "column_break_zfjbu",
+  "employee_no",
+  "last_working_day",
+  "column_break_2luz5",
+  "employee_name",
+  "no_of_days",
+  "for_hr_section",
+  "hr_ct",
+  "for_immediate_line_manager_section",
+  "lm_ct",
+  "for_finance_accounts_section",
+  "fa_ct",
+  "for_admin_section",
+  "ffa_ct",
+  "for_it_section",
+  "ffi_ct",
+  "leave_particulars_section",
+  "lp_ct",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fetch_from": "employee_no.designation",
+   "fieldname": "designation",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Designation",
+   "options": "Designation",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_uxizx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "type_of_separation",
+   "fieldtype": "Select",
+   "label": "Type of Separation",
+   "options": "\nResignation\nRetirement\nOthers"
+  },
+  {
+   "fetch_from": "employee_no.department",
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Department",
+   "options": "Department",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_zfjbu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "employee_no",
+   "fieldtype": "Link",
+   "label": "Employee No",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "employee_no.relieving_date",
+   "fieldname": "last_working_day",
+   "fieldtype": "Date",
+   "label": "Last Working Day",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_2luz5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "employee_no.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Employee Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "no_of_days",
+   "fieldtype": "Data",
+   "label": "No. of days present during the month"
+  },
+  {
+   "fieldname": "for_hr_section",
+   "fieldtype": "Section Break",
+   "label": "For HR"
+  },
+  {
+   "fieldname": "hr_ct",
+   "fieldtype": "Table",
+   "options": "FFHR CT"
+  },
+  {
+   "fieldname": "for_immediate_line_manager_section",
+   "fieldtype": "Section Break",
+   "label": "For Immediate Line Manager"
+  },
+  {
+   "fieldname": "lm_ct",
+   "fieldtype": "Table",
+   "options": "FFLM CT"
+  },
+  {
+   "fieldname": "for_finance_accounts_section",
+   "fieldtype": "Section Break",
+   "label": "For Finance & Accounts"
+  },
+  {
+   "fieldname": "fa_ct",
+   "fieldtype": "Table",
+   "options": "FFFA CT"
+  },
+  {
+   "fieldname": "for_admin_section",
+   "fieldtype": "Section Break",
+   "label": "For Admin"
+  },
+  {
+   "fieldname": "ffa_ct",
+   "fieldtype": "Table",
+   "options": "FFA CT"
+  },
+  {
+   "fieldname": "for_it_section",
+   "fieldtype": "Section Break",
+   "label": "For IT"
+  },
+  {
+   "fieldname": "ffi_ct",
+   "fieldtype": "Table",
+   "options": "FFI CT"
+  },
+  {
+   "fieldname": "leave_particulars_section",
+   "fieldtype": "Section Break",
+   "label": "LEAVE PARTICULARS"
+  },
+  {
+   "fieldname": "lp_ct",
+   "fieldtype": "Table",
+   "options": "FFLP CT"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Full and Final Clearance",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-07-02 10:53:08.114127",
+ "modified_by": "Administrator",
+ "module": "HR VentureForce Global",
+ "name": "Full and Final Clearance",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

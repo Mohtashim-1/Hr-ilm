@@ -1,0 +1,44 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-05-17 12:31:14.674469",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "subject",
+  "column_break_yfvfm",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "subject",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Subject"
+  },
+  {
+   "fieldname": "column_break_yfvfm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Remarks"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-05-17 12:31:26.829466",
+ "modified_by": "Administrator",
+ "module": "HR VentureForce Global",
+ "name": "Remarks CT",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

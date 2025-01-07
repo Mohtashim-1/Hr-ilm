@@ -1,0 +1,334 @@
+{
+ "actions": [],
+ "allow_copy": 1,
+ "autoname": "naming_series:",
+ "creation": "2023-10-23 12:59:11.297376",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "project",
+  "latitude",
+  "cc1",
+  "date",
+  "longitude",
+  "cc2",
+  "remarks",
+  "sb1",
+  "check_in",
+  "check_in_location",
+  "check_in_time",
+  "check_in_distance",
+  "column_break_2",
+  "office_visti",
+  "client_visit_out",
+  "office_location",
+  "visit_time",
+  "office_distance",
+  "column_break_4",
+  "check_out",
+  "check_out_location",
+  "check_out_time",
+  "check_out_distance",
+  "sb7",
+  "origin",
+  "employee",
+  "column_break_3",
+  "user_name",
+  "destination",
+  "column_break_6",
+  "user_detail",
+  "section_break_6",
+  "start",
+  "column_break_8",
+  "stop",
+  "section_break_10",
+  "flag",
+  "show_history",
+  "html1",
+  "trip_details",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "user_detail",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "User Detail",
+   "options": "User",
+   "read_only": 1
+  },
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_standard_filter": 1,
+   "label": "Date",
+   "permlevel": 2
+  },
+  {
+   "fetch_from": "user_detail.full_name",
+   "fieldname": "user_name",
+   "fieldtype": "Data",
+   "in_standard_filter": 1,
+   "label": "User Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "origin",
+   "fieldtype": "Data",
+   "label": "Origin",
+   "read_only": 1
+  },
+  {
+   "fieldname": "destination",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Destination"
+  },
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break",
+   "hidden": 1
+  },
+  {
+   "fieldname": "start",
+   "fieldtype": "Button",
+   "label": "start"
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "stop",
+   "fieldtype": "Button",
+   "label": "Stop"
+  },
+  {
+   "fieldname": "section_break_10",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "flag",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "flag"
+  },
+  {
+   "default": "\"<div id=\\\"map\\\" style=\\\"width: 100%; height: 380px;\\\"></div> \"",
+   "fieldname": "html1",
+   "fieldtype": "HTML",
+   "label": "html1",
+   "options": "\"<div id=\\\"map\\\" style=\\\"width: 100%; height: 380px;\\\"></div> \""
+  },
+  {
+   "fieldname": "trip_details",
+   "fieldtype": "Table",
+   "hidden": 1,
+   "label": "Trip Details",
+   "options": "Trip Locations"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Trips",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "description": "Use only when Directly Visited to Client",
+   "fieldname": "check_in",
+   "fieldtype": "Check",
+   "label": "Check In"
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "office_visti",
+   "fieldtype": "Check",
+   "label": "Client Visit In"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "description": "Use only when check-out directly from client.",
+   "fieldname": "check_out",
+   "fieldtype": "Check",
+   "label": "Check Out"
+  },
+  {
+   "fieldname": "sb7",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "check_in_location",
+   "fieldtype": "Data",
+   "label": "Check In Location",
+   "read_only": 1
+  },
+  {
+   "fieldname": "office_location",
+   "fieldtype": "Small Text",
+   "label": "Office Location",
+   "read_only": 1
+  },
+  {
+   "fieldname": "check_out_location",
+   "fieldtype": "Small Text",
+   "label": "Check Out Location",
+   "read_only": 1
+  },
+  {
+   "fieldname": "show_history",
+   "fieldtype": "Button",
+   "label": "Show Location on Map"
+  },
+  {
+   "fieldname": "check_in_time",
+   "fieldtype": "Data",
+   "label": "Check In Time",
+   "read_only": 1
+  },
+  {
+   "fieldname": "check_out_time",
+   "fieldtype": "Data",
+   "label": "Check Out Time",
+   "read_only": 1
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Visit Places ",
+   "options": "Project"
+  },
+  {
+   "fetch_from": "project.latitude",
+   "fieldname": "latitude",
+   "fieldtype": "Data",
+   "label": "Latitude",
+   "permlevel": 1,
+   "read_only": 1
+  },
+  {
+   "fetch_from": "project.longitude",
+   "fieldname": "longitude",
+   "fieldtype": "Data",
+   "label": "Longitude",
+   "permlevel": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "cc1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "cc2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sb1",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "check_in_distance",
+   "fieldtype": "Data",
+   "label": "Check In Distance",
+   "permlevel": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "check_out_distance",
+   "fieldtype": "Data",
+   "label": "Check Out Distance",
+   "permlevel": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "visit_time",
+   "fieldtype": "Data",
+   "label": "Visit Time",
+   "read_only": 1
+  },
+  {
+   "fieldname": "office_distance",
+   "fieldtype": "Data",
+   "label": "Office Distance",
+   "permlevel": 1,
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "client_visit_out",
+   "fieldtype": "Check",
+   "label": " Client Visit Out"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "naming series",
+   "options": "MM.-.DD.-"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "label": "Employee",
+   "options": "Employee",
+   "remember_last_selected_value": 1,
+   "search_index": 1
+  }
+ ],
+ "hide_toolbar": 1,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-04-16 19:02:25.778442",
+ "modified_by": "Administrator",
+ "module": "HR VentureForce Global",
+ "name": "Trips",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

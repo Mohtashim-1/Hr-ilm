@@ -1,0 +1,59 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-05-17 11:38:23.944967",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "designation",
+  "joining_date",
+  "nominee_name",
+  "contact",
+  "cnic_number"
+ ],
+ "fields": [
+  {
+   "fieldname": "designation",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Designation"
+  },
+  {
+   "fieldname": "joining_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Joining Date"
+  },
+  {
+   "fieldname": "nominee_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Nominee Name"
+  },
+  {
+   "fieldname": "contact",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Contact"
+  },
+  {
+   "fieldname": "cnic_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "CNIC Number"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-05-17 11:38:23.944967",
+ "modified_by": "Administrator",
+ "module": "HR VentureForce Global",
+ "name": "Candidate Information CT",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
